@@ -1,0 +1,500 @@
+PatchData:
+  patch_name: West Coast FM Madness
+  description: "FM + Lowpass gates + random voltages + spring reverb. What's not to love?"
+  module_slugs:
+    0: '4msCompany:HubMedium'
+    1: '4msCompany:FM'
+    2: '4msCompany:LPG'
+    3: '4msCompany:SHEV'
+    4: '4msCompany:Noise'
+    5: '4msCompany:SH'
+    6: '4msCompany:StMix'
+    7: 'Befaco:SpringReverb'
+    8: 'Befaco:SpringReverb'
+    9: '4msCompany:Atvert2'
+    10: '4msCompany:FM'
+    11: '4msCompany:LPG'
+  int_cables:
+    - out:
+        module_id: 4
+        jack_id: 0
+      ins:
+        - module_id: 5
+          jack_id: 1
+        - module_id: 5
+          jack_id: 3
+      color: 61865
+    - out:
+        module_id: 3
+        jack_id: 0
+      ins:
+        - module_id: 5
+          jack_id: 0
+        - module_id: 2
+          jack_id: 1
+      color: 1453
+    - out:
+        module_id: 2
+        jack_id: 0
+      ins:
+        - module_id: 6
+          jack_id: 0
+      color: 61865
+    - out:
+        module_id: 1
+        jack_id: 0
+      ins:
+        - module_id: 2
+          jack_id: 0
+      color: 64934
+    - out:
+        module_id: 10
+        jack_id: 0
+      ins:
+        - module_id: 11
+          jack_id: 0
+      color: 64934
+    - out:
+        module_id: 11
+        jack_id: 0
+      ins:
+        - module_id: 6
+          jack_id: 2
+      color: 35419
+    - out:
+        module_id: 3
+        jack_id: 3
+      ins:
+        - module_id: 11
+          jack_id: 1
+        - module_id: 5
+          jack_id: 2
+      color: 61865
+    - out:
+        module_id: 5
+        jack_id: 0
+      ins:
+        - module_id: 9
+          jack_id: 0
+      color: 64934
+    - out:
+        module_id: 5
+        jack_id: 1
+      ins:
+        - module_id: 9
+          jack_id: 1
+      color: 1453
+    - out:
+        module_id: 9
+        jack_id: 0
+      ins:
+        - module_id: 1
+          jack_id: 0
+        - module_id: 1
+          jack_id: 1
+        - module_id: 1
+          jack_id: 2
+        - module_id: 1
+          jack_id: 3
+        - module_id: 1
+          jack_id: 4
+      color: 13501
+    - out:
+        module_id: 9
+        jack_id: 1
+      ins:
+        - module_id: 10
+          jack_id: 0
+        - module_id: 10
+          jack_id: 1
+        - module_id: 10
+          jack_id: 3
+        - module_id: 10
+          jack_id: 2
+        - module_id: 10
+          jack_id: 4
+      color: 13501
+    - out:
+        module_id: 6
+        jack_id: 0
+      ins:
+        - module_id: 7
+          jack_id: 2
+        - module_id: 7
+          jack_id: 3
+      color: 13501
+    - out:
+        module_id: 6
+        jack_id: 1
+      ins:
+        - module_id: 8
+          jack_id: 2
+        - module_id: 8
+          jack_id: 3
+      color: 61865
+  mapped_ins: []
+  mapped_outs:
+    - panel_jack_id: 0
+      out:
+        module_id: 7
+        jack_id: 0
+    - panel_jack_id: 1
+      out:
+        module_id: 8
+        jack_id: 0
+  static_knobs:
+    - module_id: 2
+      param_id: 0
+      value: 0.875
+    - module_id: 2
+      param_id: 1
+      value: 0
+    - module_id: 2
+      param_id: 2
+      value: 0.213253
+    - module_id: 1
+      param_id: 0
+      value: 0.471084
+    - module_id: 1
+      param_id: 1
+      value: 0.5
+    - module_id: 1
+      param_id: 2
+      value: 0.133735
+    - module_id: 1
+      param_id: 3
+      value: 0.5
+    - module_id: 1
+      param_id: 4
+      value: 0.524096
+    - module_id: 1
+      param_id: 5
+      value: 0
+    - module_id: 1
+      param_id: 6
+      value: 0
+    - module_id: 1
+      param_id: 7
+      value: 0.5
+    - module_id: 3
+      param_id: 0
+      value: 1
+    - module_id: 3
+      param_id: 1
+      value: 0.5
+    - module_id: 3
+      param_id: 2
+      value: 0.5
+    - module_id: 3
+      param_id: 3
+      value: 0.5
+    - module_id: 3
+      param_id: 4
+      value: 0.5
+    - module_id: 3
+      param_id: 5
+      value: 1
+    - module_id: 3
+      param_id: 6
+      value: 1
+    - module_id: 3
+      param_id: 7
+      value: 0
+    - module_id: 3
+      param_id: 8
+      value: 0.278313
+    - module_id: 3
+      param_id: 9
+      value: 0.278313
+    - module_id: 3
+      param_id: 10
+      value: 0.259036
+    - module_id: 3
+      param_id: 11
+      value: 0.259036
+    - module_id: 3
+      param_id: 12
+      value: 0
+    - module_id: 3
+      param_id: 13
+      value: 1
+    - module_id: 3
+      param_id: 14
+      value: 0.5
+    - module_id: 3
+      param_id: 15
+      value: 0.5
+    - module_id: 3
+      param_id: 16
+      value: 1
+    - module_id: 3
+      param_id: 17
+      value: 0.5
+    - module_id: 3
+      param_id: 18
+      value: 0.5
+    - module_id: 3
+      param_id: 19
+      value: 1
+    - module_id: 3
+      param_id: 20
+      value: 1
+    - module_id: 3
+      param_id: 21
+      value: 1
+    - module_id: 3
+      param_id: 22
+      value: 1
+    - module_id: 3
+      param_id: 23
+      value: 1
+    - module_id: 6
+      param_id: 0
+      value: 0.15253
+    - module_id: 6
+      param_id: 1
+      value: 0.15253
+    - module_id: 6
+      param_id: 2
+      value: 0.875
+    - module_id: 6
+      param_id: 3
+      value: 0.875
+    - module_id: 6
+      param_id: 4
+      value: 0.5
+    - module_id: 6
+      param_id: 5
+      value: 0.5
+    - module_id: 6
+      param_id: 6
+      value: 0.5
+    - module_id: 6
+      param_id: 7
+      value: 0.5
+    - module_id: 11
+      param_id: 0
+      value: 0.876205
+    - module_id: 11
+      param_id: 1
+      value: 0
+    - module_id: 11
+      param_id: 2
+      value: 0.161446
+    - module_id: 10
+      param_id: 0
+      value: 0.471084
+    - module_id: 10
+      param_id: 1
+      value: 0.5
+    - module_id: 10
+      param_id: 2
+      value: 0.133735
+    - module_id: 10
+      param_id: 3
+      value: 0.5
+    - module_id: 10
+      param_id: 4
+      value: 0.524096
+    - module_id: 10
+      param_id: 5
+      value: 0
+    - module_id: 10
+      param_id: 6
+      value: 0
+    - module_id: 10
+      param_id: 7
+      value: 0.5
+    - module_id: 9
+      param_id: 0
+      value: 0.366265
+    - module_id: 9
+      param_id: 1
+      value: 0.720482
+    - module_id: 7
+      param_id: 0
+      value: 0.00240964
+    - module_id: 7
+      param_id: 1
+      value: 1
+    - module_id: 7
+      param_id: 2
+      value: 1
+    - module_id: 7
+      param_id: 3
+      value: 0.5
+    - module_id: 8
+      param_id: 0
+      value: 0.00240964
+    - module_id: 8
+      param_id: 1
+      value: 1
+    - module_id: 8
+      param_id: 2
+      value: 1
+    - module_id: 8
+      param_id: 3
+      value: 0.5
+  mapped_knobs:
+    - name: ''
+      set:
+        - panel_knob_id: 0
+          module_id: 3
+          param_id: 8
+          curve_type: 0
+          min: 1
+          max: 0
+          alias_name: Speed 1
+        - panel_knob_id: 0
+          module_id: 3
+          param_id: 9
+          curve_type: 0
+          min: 1
+          max: 0
+          alias_name: Speed 1
+        - panel_knob_id: 1
+          module_id: 3
+          param_id: 10
+          curve_type: 0
+          min: 1
+          max: 0
+          alias_name: Speed 2
+        - panel_knob_id: 1
+          module_id: 3
+          param_id: 11
+          curve_type: 0
+          min: 1
+          max: 0
+          alias_name: Speed 2
+        - panel_knob_id: 2
+          module_id: 10
+          param_id: 0
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Pitch
+        - panel_knob_id: 2
+          module_id: 1
+          param_id: 0
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Pitch
+        - panel_knob_id: 3
+          module_id: 10
+          param_id: 2
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Index
+        - panel_knob_id: 3
+          module_id: 1
+          param_id: 2
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Index
+        - panel_knob_id: 4
+          module_id: 2
+          param_id: 2
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: LPG Decay 1
+        - panel_knob_id: 5
+          module_id: 11
+          param_id: 2
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: LPG Decay 2
+        - panel_knob_id: 6
+          module_id: 2
+          param_id: 1
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: LPG Color
+        - panel_knob_id: 6
+          module_id: 11
+          param_id: 1
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: LPG Color
+        - panel_knob_id: 7
+          module_id: 9
+          param_id: 0
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Random Timbre 1
+        - panel_knob_id: 8
+          module_id: 9
+          param_id: 1
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Random Timbre 2
+        - panel_knob_id: 9
+          module_id: 6
+          param_id: 5
+          curve_type: 0
+          min: 0.5
+          max: 1
+          alias_name: Stereo Spread
+        - panel_knob_id: 9
+          module_id: 6
+          param_id: 4
+          curve_type: 0
+          min: 0.5
+          max: 0
+          alias_name: Stereo Spread
+        - panel_knob_id: 10
+          module_id: 6
+          param_id: 1
+          curve_type: 0
+          min: 0
+          max: 0.3
+          alias_name: Reverb Input Gain
+        - panel_knob_id: 10
+          module_id: 6
+          param_id: 0
+          curve_type: 0
+          min: 0
+          max: 0.3
+          alias_name: Reverb Input Gain
+        - panel_knob_id: 11
+          module_id: 7
+          param_id: 0
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Reverb Dry/Wet
+        - panel_knob_id: 11
+          module_id: 8
+          param_id: 0
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Reverb Dry/Wet
+    - name: ''
+      set: []
+    - name: ''
+      set: []
+    - name: ''
+      set: []
+    - name: ''
+      set: []
+    - name: ''
+      set: []
+    - name: ''
+      set: []
+    - name: ''
+      set: []
+  midi_maps:
+    name: ''
+    set: []
+  midi_poly_num: 0
+  mapped_lights: []
+  vcvModuleStates: []
