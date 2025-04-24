@@ -153,16 +153,16 @@ PatchData:
       value: 0.5
     - module_id: 10
       param_id: 1
-      value: 0.5
+      value: 1
     - module_id: 10
       param_id: 2
       value: 0.5
     - module_id: 10
       param_id: 3
-      value: 0.5
+      value: 1
     - module_id: 10
       param_id: 4
-      value: 0.5
+      value: 1
     - module_id: 10
       param_id: 5
       value: 0.875
@@ -174,7 +174,7 @@ PatchData:
       value: 0.875
     - module_id: 10
       param_id: 8
-      value: 0.5
+      value: 1
     - module_id: 2
       param_id: 0
       value: 0
