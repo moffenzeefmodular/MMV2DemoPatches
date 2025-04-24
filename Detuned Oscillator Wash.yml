@@ -1,6 +1,6 @@
 PatchData:
   patch_name: Detuned Oscillator Wash
-  description: "4 sine waves with common volume and pan LFOs. Each LFO has it's own offset so that they're always moving."
+  description: "3 sine waves with common volume and pan LFOs. Each LFO has it's own offset so that they're always moving."
   module_slugs:
     0: '4msCompany:HubMedium'
     1: 'Befaco:DualAtenuverter'
@@ -17,83 +17,64 @@ PatchData:
     12: 'Befaco:PonyVCO'
     13: 'Befaco:PonyVCO'
     14: 'Befaco:PonyVCO'
-    15: 'Befaco:DualAtenuverter'
-    16: '4msCompany:Pan'
-    17: 'Befaco:PonyVCO'
-    18: 'Befaco:PonyVCO'
-    19: 'Befaco:PonyVCO'
-    20: '4msCompany:Pan'
-    21: '4msCompany:StMix'
+    15: '4msCompany:Pan'
+    16: '4msCompany:StMix'
   int_cables:
+    - out:
+        module_id: 5
+        jack_id: 0
+      ins:
+        - module_id: 6
+          jack_id: 0
+      color: 61865
+    - out:
+        module_id: 4
+        jack_id: 0
+      ins:
+        - module_id: 6
+          jack_id: 1
+      color: 61865
     - out:
         module_id: 6
         jack_id: 0
       ins:
-        - module_id: 21
+        - module_id: 16
           jack_id: 0
       color: 1453
     - out:
         module_id: 6
         jack_id: 1
       ins:
-        - module_id: 21
+        - module_id: 16
           jack_id: 1
       color: 13501
     - out:
         module_id: 10
         jack_id: 0
       ins:
-        - module_id: 21
+        - module_id: 16
           jack_id: 2
       color: 35419
     - out:
         module_id: 10
         jack_id: 1
       ins:
-        - module_id: 21
+        - module_id: 16
           jack_id: 3
       color: 61865
     - out:
-        module_id: 16
+        module_id: 15
         jack_id: 0
       ins:
-        - module_id: 21
+        - module_id: 16
           jack_id: 4
       color: 64934
     - out:
-        module_id: 16
+        module_id: 15
         jack_id: 1
       ins:
-        - module_id: 21
+        - module_id: 16
           jack_id: 5
-      color: 1453
-    - out:
-        module_id: 20
-        jack_id: 0
-      ins:
-        - module_id: 21
-          jack_id: 6
-      color: 64934
-    - out:
-        module_id: 20
-        jack_id: 1
-      ins:
-        - module_id: 21
-          jack_id: 7
-      color: 1453
-    - out:
-        module_id: 13
-        jack_id: 0
-      ins:
-        - module_id: 15
-          jack_id: 0
-      color: 61865
-    - out:
-        module_id: 18
-        jack_id: 0
-      ins:
-        - module_id: 15
-          jack_id: 1
       color: 1453
     - out:
         module_id: 5
@@ -110,60 +91,32 @@ PatchData:
           jack_id: 1
       color: 61865
     - out:
-        module_id: 5
-        jack_id: 0
-      ins:
-        - module_id: 6
-          jack_id: 0
-      color: 61865
-    - out:
-        module_id: 4
-        jack_id: 0
-      ins:
-        - module_id: 6
-          jack_id: 1
-      color: 61865
-    - out:
-        module_id: 15
-        jack_id: 1
-      ins:
-        - module_id: 20
-          jack_id: 0
-      color: 13501
-    - out:
-        module_id: 19
-        jack_id: 0
-      ins:
-        - module_id: 20
-          jack_id: 1
-      color: 64934
-    - out:
-        module_id: 15
-        jack_id: 0
-      ins:
-        - module_id: 16
-          jack_id: 0
-      color: 1453
-    - out:
         module_id: 14
         jack_id: 0
       ins:
-        - module_id: 16
+        - module_id: 15
           jack_id: 1
       color: 13501
+    - out:
+        module_id: 2
+        jack_id: 0
+      ins:
+        - module_id: 1
+          jack_id: 0
+      color: 61865
+    - out:
+        module_id: 7
+        jack_id: 0
+      ins:
+        - module_id: 1
+          jack_id: 1
+      color: 1453
     - out:
         module_id: 12
         jack_id: 0
       ins:
         - module_id: 11
           jack_id: 0
-      color: 35419
-    - out:
-        module_id: 17
-        jack_id: 0
-      ins:
-        - module_id: 11
-          jack_id: 1
       color: 35419
     - out:
         module_id: 3
@@ -187,13 +140,6 @@ PatchData:
           jack_id: 4
       color: 64934
     - out:
-        module_id: 11
-        jack_id: 1
-      ins:
-        - module_id: 19
-          jack_id: 4
-      color: 13501
-    - out:
         module_id: 1
         jack_id: 1
       ins:
@@ -208,29 +154,29 @@ PatchData:
           jack_id: 4
       color: 13501
     - out:
-        module_id: 2
+        module_id: 13
         jack_id: 0
       ins:
-        - module_id: 1
-          jack_id: 0
+        - module_id: 11
+          jack_id: 1
       color: 61865
     - out:
-        module_id: 7
-        jack_id: 0
+        module_id: 11
+        jack_id: 1
       ins:
-        - module_id: 1
-          jack_id: 1
+        - module_id: 15
+          jack_id: 0
       color: 1453
   mapped_ins: []
   mapped_outs:
-    - panel_jack_id: 1
-      out:
-        module_id: 21
-        jack_id: 1
     - panel_jack_id: 0
       out:
-        module_id: 21
+        module_id: 16
         jack_id: 0
+    - panel_jack_id: 1
+      out:
+        module_id: 16
+        jack_id: 1
   static_knobs:
     - module_id: 4
       param_id: 0
@@ -252,7 +198,7 @@ PatchData:
       value: 0.5
     - module_id: 2
       param_id: 0
-      value: 0.29707
+      value: 0.18372
     - module_id: 2
       param_id: 1
       value: 1
@@ -267,7 +213,7 @@ PatchData:
       value: 0
     - module_id: 3
       param_id: 0
-      value: 0.304819
+      value: 0.309638
     - module_id: 3
       param_id: 1
       value: 1
@@ -280,28 +226,28 @@ PatchData:
     - module_id: 3
       param_id: 4
       value: 0
-    - module_id: 21
+    - module_id: 16
       param_id: 0
-      value: 0.815663
-    - module_id: 21
+      value: 0.378313
+    - module_id: 16
       param_id: 1
-      value: 0.815663
-    - module_id: 21
+      value: 0.378313
+    - module_id: 16
       param_id: 2
-      value: 0.815663
-    - module_id: 21
+      value: 0.378313
+    - module_id: 16
       param_id: 3
-      value: 0.815663
-    - module_id: 21
+      value: 0.0144576
+    - module_id: 16
       param_id: 4
       value: 0.5
-    - module_id: 21
+    - module_id: 16
       param_id: 5
       value: 0.5
-    - module_id: 21
+    - module_id: 16
       param_id: 6
       value: 0.5
-    - module_id: 21
+    - module_id: 16
       param_id: 7
       value: 0.5
     - module_id: 9
@@ -321,7 +267,7 @@ PatchData:
       value: 0
     - module_id: 7
       param_id: 0
-      value: 0.389525
+      value: 0.240898
     - module_id: 7
       param_id: 1
       value: 1
@@ -336,7 +282,7 @@ PatchData:
       value: 0
     - module_id: 8
       param_id: 0
-      value: 0.304819
+      value: 0.309638
     - module_id: 8
       param_id: 1
       value: 1
@@ -369,7 +315,7 @@ PatchData:
       value: 0
     - module_id: 12
       param_id: 0
-      value: 0.543364
+      value: 0.336039
     - module_id: 12
       param_id: 1
       value: 1
@@ -384,7 +330,7 @@ PatchData:
       value: 0
     - module_id: 13
       param_id: 0
-      value: 0.304819
+      value: 0.309638
     - module_id: 13
       param_id: 1
       value: 1
@@ -397,55 +343,7 @@ PatchData:
     - module_id: 13
       param_id: 4
       value: 0
-    - module_id: 16
-      param_id: 0
-      value: 0.5
-    - module_id: 19
-      param_id: 0
-      value: 0.359036
-    - module_id: 19
-      param_id: 1
-      value: 0
-    - module_id: 19
-      param_id: 2
-      value: 0
-    - module_id: 19
-      param_id: 3
-      value: 0.666667
-    - module_id: 19
-      param_id: 4
-      value: 0
-    - module_id: 17
-      param_id: 0
-      value: 0.641125
-    - module_id: 17
-      param_id: 1
-      value: 1
-    - module_id: 17
-      param_id: 2
-      value: 0
-    - module_id: 17
-      param_id: 3
-      value: 0.666667
-    - module_id: 17
-      param_id: 4
-      value: 0
-    - module_id: 18
-      param_id: 0
-      value: 0.304819
-    - module_id: 18
-      param_id: 1
-      value: 1
-    - module_id: 18
-      param_id: 2
-      value: 0
-    - module_id: 18
-      param_id: 3
-      value: 0.666667
-    - module_id: 18
-      param_id: 4
-      value: 0
-    - module_id: 20
+    - module_id: 15
       param_id: 0
       value: 0.5
     - module_id: 1
@@ -453,49 +351,37 @@ PatchData:
       value: 1
     - module_id: 1
       param_id: 1
-      value: 0.83494
+      value: 0.88494
     - module_id: 1
       param_id: 2
       value: 1
     - module_id: 1
       param_id: 3
-      value: 0.83494
+      value: 0.88494
     - module_id: 11
       param_id: 0
       value: 1
     - module_id: 11
       param_id: 1
-      value: 0.83593
+      value: 0.88563
     - module_id: 11
       param_id: 2
-      value: 1
+      value: 0.635542
     - module_id: 11
       param_id: 3
-      value: 0.83527
+      value: 0.88517
     - module_id: 5
       param_id: 0
-      value: 0.649398
+      value: 0.635542
     - module_id: 5
       param_id: 1
       value: 0.498
     - module_id: 5
       param_id: 2
-      value: 0.649397
+      value: 0.635542
     - module_id: 5
       param_id: 3
       value: 0.503
-    - module_id: 15
-      param_id: 0
-      value: 0.649397
-    - module_id: 15
-      param_id: 1
-      value: 0.506
-    - module_id: 15
-      param_id: 2
-      value: 0.649397
-    - module_id: 15
-      param_id: 3
-      value: 0.501
   mapped_knobs:
     - name: ''
       set:
@@ -521,12 +407,26 @@ PatchData:
           max: 1
           alias_name: Pitch 3
         - panel_knob_id: 3
-          module_id: 19
-          param_id: 0
+          module_id: 4
+          param_id: 2
           curve_type: 0
           min: 0
           max: 1
-          alias_name: Pitch 4
+          alias_name: Timbre
+        - panel_knob_id: 3
+          module_id: 9
+          param_id: 2
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Timbre
+        - panel_knob_id: 3
+          module_id: 14
+          param_id: 2
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Timbre
         - panel_knob_id: 4
           module_id: 2
           param_id: 0
@@ -548,13 +448,6 @@ PatchData:
           min: 0
           max: 0.717
           alias_name: Vol LFO Rate
-        - panel_knob_id: 4
-          module_id: 17
-          param_id: 0
-          curve_type: 0
-          min: 0
-          max: 0.846
-          alias_name: Vol LFO Rate
         - panel_knob_id: 5
           module_id: 3
           param_id: 0
@@ -571,13 +464,6 @@ PatchData:
           alias_name: Pan LFO Rate
         - panel_knob_id: 5
           module_id: 13
-          param_id: 0
-          curve_type: 0
-          min: 0
-          max: 1
-          alias_name: Pan LFO Rate
-        - panel_knob_id: 5
-          module_id: 18
           param_id: 0
           curve_type: 0
           min: 0
@@ -626,47 +512,33 @@ PatchData:
           max: 1
           alias_name: Pan LFO Depth
         - panel_knob_id: 7
-          module_id: 15
-          param_id: 0
-          curve_type: 0
-          min: 0.5
-          max: 1
-          alias_name: Pan LFO Depth
-        - panel_knob_id: 7
-          module_id: 15
+          module_id: 11
           param_id: 2
           curve_type: 0
           min: 0.5
           max: 1
           alias_name: Pan LFO Depth
         - panel_knob_id: 8
-          module_id: 21
+          module_id: 16
           param_id: 0
           curve_type: 0
           min: 0
           max: 1
-          alias_name: Mix Level
+          alias_name: Master Volume
         - panel_knob_id: 8
-          module_id: 21
+          module_id: 16
           param_id: 1
           curve_type: 0
           min: 0
           max: 1
-          alias_name: Mix Level
+          alias_name: Master Volume
         - panel_knob_id: 8
-          module_id: 21
+          module_id: 16
           param_id: 2
           curve_type: 0
           min: 0
           max: 1
-          alias_name: Mix Level
-        - panel_knob_id: 8
-          module_id: 21
-          param_id: 3
-          curve_type: 0
-          min: 0
-          max: 1
-          alias_name: Mix Level
+          alias_name: Master Volume
     - name: ''
       set: []
     - name: ''
@@ -712,14 +584,5 @@ PatchData:
       data: |-
         {"blockTZFMDC":true,"removePulseDC":true,"limitPW":true,"oversamplingIndex":1}
     - module_id: 13
-      data: |-
-        {"blockTZFMDC":true,"removePulseDC":true,"limitPW":true,"oversamplingIndex":1}
-    - module_id: 19
-      data: |-
-        {"blockTZFMDC":true,"removePulseDC":true,"limitPW":true,"oversamplingIndex":1}
-    - module_id: 17
-      data: |-
-        {"blockTZFMDC":true,"removePulseDC":true,"limitPW":true,"oversamplingIndex":1}
-    - module_id: 18
       data: |-
         {"blockTZFMDC":true,"removePulseDC":true,"limitPW":true,"oversamplingIndex":1}
