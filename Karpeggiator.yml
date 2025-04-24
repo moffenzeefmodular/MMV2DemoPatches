@@ -1,0 +1,317 @@
+PatchData:
+  patch_name: Karpeggiator
+  description: QCD under random modulation clocking 3 karplus strong voices
+  module_slugs:
+    0: '4msCompany:HubMedium'
+    1: '4msCompany:QCD'
+    2: '4msCompany:Noise'
+    3: '4msCompany:SH'
+    4: '4msCompany:Atvert2'
+    5: '4msCompany:Atvert2'
+    6: '4msCompany:KPLS'
+    7: '4msCompany:KPLS'
+    8: '4msCompany:KPLS'
+    9: '4msCompany:L4'
+  int_cables:
+    - out:
+        module_id: 6
+        jack_id: 0
+      ins:
+        - module_id: 9
+          jack_id: 0
+      color: 64934
+    - out:
+        module_id: 7
+        jack_id: 0
+      ins:
+        - module_id: 9
+          jack_id: 1
+      color: 1453
+    - out:
+        module_id: 8
+        jack_id: 0
+      ins:
+        - module_id: 9
+          jack_id: 2
+      color: 13501
+    - out:
+        module_id: 1
+        jack_id: 2
+      ins:
+        - module_id: 6
+          jack_id: 1
+      color: 1453
+    - out:
+        module_id: 1
+        jack_id: 4
+      ins:
+        - module_id: 7
+          jack_id: 1
+      color: 13501
+    - out:
+        module_id: 1
+        jack_id: 6
+      ins:
+        - module_id: 8
+          jack_id: 1
+      color: 35419
+    - out:
+        module_id: 2
+        jack_id: 0
+      ins:
+        - module_id: 3
+          jack_id: 1
+      color: 35419
+    - out:
+        module_id: 3
+        jack_id: 0
+      ins:
+        - module_id: 5
+          jack_id: 0
+        - module_id: 4
+          jack_id: 0
+        - module_id: 4
+          jack_id: 1
+        - module_id: 5
+          jack_id: 1
+      color: 64934
+    - out:
+        module_id: 4
+        jack_id: 0
+      ins:
+        - module_id: 1
+          jack_id: 1
+      color: 61865
+    - out:
+        module_id: 4
+        jack_id: 1
+      ins:
+        - module_id: 1
+          jack_id: 5
+      color: 64934
+    - out:
+        module_id: 1
+        jack_id: 8
+      ins:
+        - module_id: 3
+          jack_id: 0
+      color: 1453
+  mapped_ins: []
+  mapped_outs:
+    - panel_jack_id: 0
+      out:
+        module_id: 9
+        jack_id: 1
+    - panel_jack_id: 1
+      out:
+        module_id: 9
+        jack_id: 2
+  static_knobs:
+    - module_id: 7
+      param_id: 0
+      value: 0.392771
+    - module_id: 7
+      param_id: 1
+      value: 0
+    - module_id: 7
+      param_id: 2
+      value: 0
+    - module_id: 8
+      param_id: 0
+      value: 0.488193
+    - module_id: 8
+      param_id: 1
+      value: 0
+    - module_id: 8
+      param_id: 2
+      value: 0
+    - module_id: 6
+      param_id: 0
+      value: 0.124096
+    - module_id: 6
+      param_id: 1
+      value: 0
+    - module_id: 6
+      param_id: 2
+      value: 0
+    - module_id: 9
+      param_id: 0
+      value: 0.5
+    - module_id: 9
+      param_id: 1
+      value: 0.875
+    - module_id: 9
+      param_id: 2
+      value: 0.5
+    - module_id: 9
+      param_id: 3
+      value: 0.875
+    - module_id: 9
+      param_id: 4
+      value: 0.873795
+    - module_id: 9
+      param_id: 5
+      value: 0.875
+    - module_id: 9
+      param_id: 6
+      value: 0
+    - module_id: 9
+      param_id: 7
+      value: 0.875
+    - module_id: 9
+      param_id: 8
+      value: 0.875
+    - module_id: 1
+      param_id: 0
+      value: 0
+    - module_id: 1
+      param_id: 1
+      value: 1
+    - module_id: 1
+      param_id: 2
+      value: 0.5
+    - module_id: 1
+      param_id: 3
+      value: 0.5
+    - module_id: 1
+      param_id: 4
+      value: 1
+    - module_id: 1
+      param_id: 5
+      value: 0.522222
+    - module_id: 1
+      param_id: 6
+      value: 1
+    - module_id: 1
+      param_id: 7
+      value: 0.5
+    - module_id: 1
+      param_id: 8
+      value: 0.5
+    - module_id: 1
+      param_id: 9
+      value: 1
+    - module_id: 1
+      param_id: 10
+      value: 0.40848
+    - module_id: 1
+      param_id: 11
+      value: 1
+    - module_id: 1
+      param_id: 12
+      value: 0.5
+    - module_id: 1
+      param_id: 13
+      value: 0.5
+    - module_id: 1
+      param_id: 14
+      value: 1
+    - module_id: 1
+      param_id: 15
+      value: 0.448735
+    - module_id: 1
+      param_id: 16
+      value: 1
+    - module_id: 1
+      param_id: 17
+      value: 0.5
+    - module_id: 1
+      param_id: 18
+      value: 0.5
+    - module_id: 1
+      param_id: 19
+      value: 1
+    - module_id: 1
+      param_id: 20
+      value: 0.447745
+    - module_id: 4
+      param_id: 0
+      value: 0.43494
+    - module_id: 4
+      param_id: 1
+      value: 0.356626
+    - module_id: 5
+      param_id: 0
+      value: 0.638554
+    - module_id: 5
+      param_id: 1
+      value: 0.7
+  mapped_knobs:
+    - name: ''
+      set:
+        - panel_knob_id: 0
+          module_id: 1
+          param_id: 5
+          curve_type: 0
+          min: 0.298
+          max: 0.642
+          alias_name: Divide 1
+        - panel_knob_id: 1
+          module_id: 1
+          param_id: 10
+          curve_type: 0
+          min: 0.244
+          max: 0.617
+          alias_name: Divide 2
+        - panel_knob_id: 2
+          module_id: 1
+          param_id: 15
+          curve_type: 0
+          min: 0.216
+          max: 0.627
+          alias_name: Divide 3
+        - panel_knob_id: 3
+          module_id: 4
+          param_id: 0
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: 'Div Att 1 '
+        - panel_knob_id: 4
+          module_id: 4
+          param_id: 1
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Div Att 2
+        - panel_knob_id: 5
+          module_id: 5
+          param_id: 0
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Div Att 3
+        - panel_knob_id: 6
+          module_id: 1
+          param_id: 20
+          curve_type: 0
+          min: 0.34
+          max: 0.623
+          alias_name: Random Clock
+        - panel_knob_id: 7
+          module_id: 9
+          param_id: 8
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Master Volume
+    - name: ''
+      set: []
+    - name: ''
+      set: []
+    - name: ''
+      set: []
+    - name: ''
+      set: []
+    - name: ''
+      set: []
+    - name: ''
+      set: []
+    - name: ''
+      set: []
+  midi_maps:
+    name: ''
+    set: []
+  midi_poly_num: 0
+  mapped_lights: []
+  vcvModuleStates: []
