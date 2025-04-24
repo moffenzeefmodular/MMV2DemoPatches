@@ -9,12 +9,35 @@ PatchData:
     4: '4msCompany:Noise'
     5: '4msCompany:SH'
     6: '4msCompany:StMix'
-    7: 'Befaco:SpringReverb'
-    8: 'Befaco:SpringReverb'
+    7: '4msCompany:Freeverb'
+    8: '4msCompany:Freeverb'
     9: '4msCompany:Atvert2'
     10: '4msCompany:FM'
     11: '4msCompany:LPG'
   int_cables:
+    - out:
+        module_id: 2
+        jack_id: 0
+      ins:
+        - module_id: 6
+          jack_id: 0
+      color: 61865
+    - out:
+        module_id: 11
+        jack_id: 0
+      ins:
+        - module_id: 6
+          jack_id: 2
+      color: 35419
+    - out:
+        module_id: 3
+        jack_id: 0
+      ins:
+        - module_id: 5
+          jack_id: 0
+        - module_id: 2
+          jack_id: 1
+      color: 1453
     - out:
         module_id: 4
         jack_id: 0
@@ -26,27 +49,57 @@ PatchData:
       color: 61865
     - out:
         module_id: 3
-        jack_id: 0
+        jack_id: 3
       ins:
         - module_id: 5
-          jack_id: 0
-        - module_id: 2
+          jack_id: 2
+        - module_id: 11
           jack_id: 1
-      color: 1453
+      color: 13501
     - out:
-        module_id: 2
+        module_id: 9
         jack_id: 0
       ins:
-        - module_id: 6
+        - module_id: 1
           jack_id: 0
-      color: 61865
+        - module_id: 1
+          jack_id: 1
+        - module_id: 1
+          jack_id: 2
+        - module_id: 1
+          jack_id: 3
+        - module_id: 1
+          jack_id: 4
+      color: 13501
     - out:
-        module_id: 1
+        module_id: 9
+        jack_id: 1
+      ins:
+        - module_id: 10
+          jack_id: 0
+        - module_id: 10
+          jack_id: 1
+        - module_id: 10
+          jack_id: 2
+        - module_id: 10
+          jack_id: 3
+        - module_id: 10
+          jack_id: 4
+      color: 13501
+    - out:
+        module_id: 5
         jack_id: 0
       ins:
-        - module_id: 2
+        - module_id: 9
           jack_id: 0
       color: 64934
+    - out:
+        module_id: 5
+        jack_id: 1
+      ins:
+        - module_id: 9
+          jack_id: 1
+      color: 1453
     - out:
         module_id: 10
         jack_id: 0
@@ -55,82 +108,25 @@ PatchData:
           jack_id: 0
       color: 64934
     - out:
-        module_id: 11
+        module_id: 1
         jack_id: 0
       ins:
-        - module_id: 6
-          jack_id: 2
-      color: 35419
-    - out:
-        module_id: 3
-        jack_id: 3
-      ins:
-        - module_id: 11
-          jack_id: 1
-        - module_id: 5
-          jack_id: 2
-      color: 61865
-    - out:
-        module_id: 5
-        jack_id: 0
-      ins:
-        - module_id: 9
+        - module_id: 2
           jack_id: 0
       color: 64934
     - out:
-        module_id: 5
-        jack_id: 1
-      ins:
-        - module_id: 9
-          jack_id: 1
-      color: 1453
-    - out:
-        module_id: 9
-        jack_id: 0
-      ins:
-        - module_id: 1
-          jack_id: 0
-        - module_id: 1
-          jack_id: 1
-        - module_id: 1
-          jack_id: 2
-        - module_id: 1
-          jack_id: 3
-        - module_id: 1
-          jack_id: 4
-      color: 13501
-    - out:
-        module_id: 9
-        jack_id: 1
-      ins:
-        - module_id: 10
-          jack_id: 0
-        - module_id: 10
-          jack_id: 1
-        - module_id: 10
-          jack_id: 3
-        - module_id: 10
-          jack_id: 2
-        - module_id: 10
-          jack_id: 4
-      color: 13501
-    - out:
         module_id: 6
         jack_id: 0
       ins:
         - module_id: 7
-          jack_id: 2
-        - module_id: 7
-          jack_id: 3
-      color: 13501
+          jack_id: 0
+      color: 35419
     - out:
         module_id: 6
         jack_id: 1
       ins:
         - module_id: 8
-          jack_id: 2
-        - module_id: 8
-          jack_id: 3
+          jack_id: 0
       color: 61865
   mapped_ins: []
   mapped_outs:
@@ -154,13 +150,13 @@ PatchData:
       value: 0.213253
     - module_id: 1
       param_id: 0
-      value: 0.471084
+      value: 0.595181
     - module_id: 1
       param_id: 1
       value: 0.5
     - module_id: 1
       param_id: 2
-      value: 0.133735
+      value: 1
     - module_id: 1
       param_id: 3
       value: 0.5
@@ -202,16 +198,16 @@ PatchData:
       value: 0
     - module_id: 3
       param_id: 8
-      value: 0.278313
+      value: 0.227711
     - module_id: 3
       param_id: 9
-      value: 0.278313
+      value: 0.227711
     - module_id: 3
       param_id: 10
-      value: 0.259036
+      value: 0.285542
     - module_id: 3
       param_id: 11
-      value: 0.259036
+      value: 0.285542
     - module_id: 3
       param_id: 12
       value: 0
@@ -250,10 +246,10 @@ PatchData:
       value: 1
     - module_id: 6
       param_id: 0
-      value: 0.15253
+      value: 0.3
     - module_id: 6
       param_id: 1
-      value: 0.15253
+      value: 0.3
     - module_id: 6
       param_id: 2
       value: 0.875
@@ -262,10 +258,10 @@ PatchData:
       value: 0.875
     - module_id: 6
       param_id: 4
-      value: 0.5
+      value: 0.41506
     - module_id: 6
       param_id: 5
-      value: 0.5
+      value: 0.58494
     - module_id: 6
       param_id: 6
       value: 0.5
@@ -283,13 +279,13 @@ PatchData:
       value: 0.161446
     - module_id: 10
       param_id: 0
-      value: 0.471084
+      value: 0.595181
     - module_id: 10
       param_id: 1
       value: 0.5
     - module_id: 10
       param_id: 2
-      value: 0.133735
+      value: 1
     - module_id: 10
       param_id: 3
       value: 0.5
@@ -307,34 +303,34 @@ PatchData:
       value: 0.5
     - module_id: 9
       param_id: 0
-      value: 0.366265
+      value: 0.906024
     - module_id: 9
       param_id: 1
-      value: 0.720482
+      value: 0.789156
     - module_id: 7
       param_id: 0
-      value: 0.00240964
+      value: 0.7
     - module_id: 7
       param_id: 1
-      value: 1
+      value: 0.5
     - module_id: 7
       param_id: 2
-      value: 1
+      value: 0.25
     - module_id: 7
       param_id: 3
-      value: 0.5
+      value: 0.115663
     - module_id: 8
       param_id: 0
-      value: 0.00240964
+      value: 0.7
     - module_id: 8
       param_id: 1
-      value: 1
+      value: 0.5
     - module_id: 8
       param_id: 2
-      value: 1
+      value: 0.25
     - module_id: 8
       param_id: 3
-      value: 0.5
+      value: 0.115663
   mapped_knobs:
     - name: ''
       set:
@@ -466,17 +462,17 @@ PatchData:
           alias_name: Reverb Input Gain
         - panel_knob_id: 11
           module_id: 7
-          param_id: 0
+          param_id: 3
           curve_type: 0
           min: 0
-          max: 1
+          max: 0.5
           alias_name: Reverb Dry/Wet
         - panel_knob_id: 11
           module_id: 8
-          param_id: 0
+          param_id: 3
           curve_type: 0
           min: 0
-          max: 1
+          max: 0.5
           alias_name: Reverb Dry/Wet
     - name: ''
       set: []
