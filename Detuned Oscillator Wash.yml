@@ -1,0 +1,807 @@
+PatchData:
+  patch_name: Detuned Oscillator Wash
+  description: "4 sine waves with common volume and pan LFOs. Each LFO has it's own offset so that they're always moving."
+  module_slugs:
+    0: '4msCompany:HubMedium'
+    1: 'Befaco:DualAtenuverter'
+    2: 'Befaco:PonyVCO'
+    3: 'Befaco:PonyVCO'
+    4: 'Befaco:PonyVCO'
+    5: 'Befaco:DualAtenuverter'
+    6: '4msCompany:Pan'
+    7: 'Befaco:PonyVCO'
+    8: 'Befaco:PonyVCO'
+    9: 'Befaco:PonyVCO'
+    10: '4msCompany:Pan'
+    11: 'Befaco:DualAtenuverter'
+    12: 'Befaco:PonyVCO'
+    13: 'Befaco:PonyVCO'
+    14: 'Befaco:PonyVCO'
+    15: 'Befaco:DualAtenuverter'
+    16: '4msCompany:Pan'
+    17: 'Befaco:PonyVCO'
+    18: 'Befaco:PonyVCO'
+    19: 'Befaco:PonyVCO'
+    20: '4msCompany:Pan'
+    21: '4msCompany:StMix'
+    22: '4msCompany:Freeverb'
+    23: '4msCompany:Freeverb'
+  int_cables:
+    - out:
+        module_id: 4
+        jack_id: 0
+      ins:
+        - module_id: 6
+          jack_id: 1
+      color: 61865
+    - out:
+        module_id: 6
+        jack_id: 0
+      ins:
+        - module_id: 21
+          jack_id: 0
+      color: 1453
+    - out:
+        module_id: 6
+        jack_id: 1
+      ins:
+        - module_id: 21
+          jack_id: 1
+      color: 13501
+    - out:
+        module_id: 9
+        jack_id: 0
+      ins:
+        - module_id: 10
+          jack_id: 1
+      color: 61865
+    - out:
+        module_id: 10
+        jack_id: 0
+      ins:
+        - module_id: 21
+          jack_id: 2
+      color: 35419
+    - out:
+        module_id: 10
+        jack_id: 1
+      ins:
+        - module_id: 21
+          jack_id: 3
+      color: 61865
+    - out:
+        module_id: 16
+        jack_id: 0
+      ins:
+        - module_id: 21
+          jack_id: 4
+      color: 64934
+    - out:
+        module_id: 16
+        jack_id: 1
+      ins:
+        - module_id: 21
+          jack_id: 5
+      color: 1453
+    - out:
+        module_id: 14
+        jack_id: 0
+      ins:
+        - module_id: 16
+          jack_id: 1
+      color: 13501
+    - out:
+        module_id: 20
+        jack_id: 0
+      ins:
+        - module_id: 21
+          jack_id: 6
+      color: 64934
+    - out:
+        module_id: 20
+        jack_id: 1
+      ins:
+        - module_id: 21
+          jack_id: 7
+      color: 1453
+    - out:
+        module_id: 19
+        jack_id: 0
+      ins:
+        - module_id: 20
+          jack_id: 1
+      color: 64934
+    - out:
+        module_id: 2
+        jack_id: 0
+      ins:
+        - module_id: 1
+          jack_id: 0
+      color: 61865
+    - out:
+        module_id: 1
+        jack_id: 0
+      ins:
+        - module_id: 4
+          jack_id: 4
+      color: 64934
+    - out:
+        module_id: 1
+        jack_id: 1
+      ins:
+        - module_id: 9
+          jack_id: 4
+      color: 64934
+    - out:
+        module_id: 7
+        jack_id: 0
+      ins:
+        - module_id: 1
+          jack_id: 1
+      color: 1453
+    - out:
+        module_id: 12
+        jack_id: 0
+      ins:
+        - module_id: 11
+          jack_id: 0
+      color: 35419
+    - out:
+        module_id: 11
+        jack_id: 0
+      ins:
+        - module_id: 14
+          jack_id: 4
+      color: 13501
+    - out:
+        module_id: 11
+        jack_id: 1
+      ins:
+        - module_id: 19
+          jack_id: 4
+      color: 13501
+    - out:
+        module_id: 17
+        jack_id: 0
+      ins:
+        - module_id: 11
+          jack_id: 1
+      color: 35419
+    - out:
+        module_id: 3
+        jack_id: 0
+      ins:
+        - module_id: 5
+          jack_id: 0
+      color: 61865
+    - out:
+        module_id: 5
+        jack_id: 0
+      ins:
+        - module_id: 6
+          jack_id: 0
+      color: 61865
+    - out:
+        module_id: 5
+        jack_id: 1
+      ins:
+        - module_id: 10
+          jack_id: 0
+      color: 61865
+    - out:
+        module_id: 8
+        jack_id: 0
+      ins:
+        - module_id: 5
+          jack_id: 1
+      color: 64934
+    - out:
+        module_id: 13
+        jack_id: 0
+      ins:
+        - module_id: 15
+          jack_id: 0
+      color: 61865
+    - out:
+        module_id: 15
+        jack_id: 0
+      ins:
+        - module_id: 16
+          jack_id: 0
+      color: 1453
+    - out:
+        module_id: 18
+        jack_id: 0
+      ins:
+        - module_id: 15
+          jack_id: 1
+      color: 1453
+    - out:
+        module_id: 15
+        jack_id: 1
+      ins:
+        - module_id: 20
+          jack_id: 0
+      color: 13501
+    - out:
+        module_id: 21
+        jack_id: 0
+      ins:
+        - module_id: 22
+          jack_id: 0
+      color: 35419
+    - out:
+        module_id: 21
+        jack_id: 1
+      ins:
+        - module_id: 23
+          jack_id: 0
+      color: 61865
+  mapped_ins: []
+  mapped_outs:
+    - panel_jack_id: 1
+      out:
+        module_id: 23
+        jack_id: 0
+    - panel_jack_id: 0
+      out:
+        module_id: 22
+        jack_id: 0
+  static_knobs:
+    - module_id: 4
+      param_id: 0
+      value: 0.436145
+    - module_id: 4
+      param_id: 1
+      value: 0
+    - module_id: 4
+      param_id: 2
+      value: 0
+    - module_id: 4
+      param_id: 3
+      value: 0.666667
+    - module_id: 4
+      param_id: 4
+      value: 0
+    - module_id: 6
+      param_id: 0
+      value: 0.5
+    - module_id: 2
+      param_id: 0
+      value: 0.29707
+    - module_id: 2
+      param_id: 1
+      value: 1
+    - module_id: 2
+      param_id: 2
+      value: 0
+    - module_id: 2
+      param_id: 3
+      value: 0.666667
+    - module_id: 2
+      param_id: 4
+      value: 0
+    - module_id: 3
+      param_id: 0
+      value: 0.304819
+    - module_id: 3
+      param_id: 1
+      value: 1
+    - module_id: 3
+      param_id: 2
+      value: 0
+    - module_id: 3
+      param_id: 3
+      value: 0.666667
+    - module_id: 3
+      param_id: 4
+      value: 0
+    - module_id: 21
+      param_id: 0
+      value: 0.815663
+    - module_id: 21
+      param_id: 1
+      value: 0.815663
+    - module_id: 21
+      param_id: 2
+      value: 0.815663
+    - module_id: 21
+      param_id: 3
+      value: 0.815663
+    - module_id: 21
+      param_id: 4
+      value: 0.5
+    - module_id: 21
+      param_id: 5
+      value: 0.5
+    - module_id: 21
+      param_id: 6
+      value: 0.5
+    - module_id: 21
+      param_id: 7
+      value: 0.5
+    - module_id: 9
+      param_id: 0
+      value: 0.361446
+    - module_id: 9
+      param_id: 1
+      value: 0
+    - module_id: 9
+      param_id: 2
+      value: 0
+    - module_id: 9
+      param_id: 3
+      value: 0.666667
+    - module_id: 9
+      param_id: 4
+      value: 0
+    - module_id: 7
+      param_id: 0
+      value: 0.389525
+    - module_id: 7
+      param_id: 1
+      value: 1
+    - module_id: 7
+      param_id: 2
+      value: 0
+    - module_id: 7
+      param_id: 3
+      value: 0.666667
+    - module_id: 7
+      param_id: 4
+      value: 0
+    - module_id: 8
+      param_id: 0
+      value: 0.304819
+    - module_id: 8
+      param_id: 1
+      value: 1
+    - module_id: 8
+      param_id: 2
+      value: 0
+    - module_id: 8
+      param_id: 3
+      value: 0.666667
+    - module_id: 8
+      param_id: 4
+      value: 0
+    - module_id: 10
+      param_id: 0
+      value: 0.5
+    - module_id: 14
+      param_id: 0
+      value: 0.415662
+    - module_id: 14
+      param_id: 1
+      value: 0
+    - module_id: 14
+      param_id: 2
+      value: 0
+    - module_id: 14
+      param_id: 3
+      value: 0.666667
+    - module_id: 14
+      param_id: 4
+      value: 0
+    - module_id: 12
+      param_id: 0
+      value: 0.543364
+    - module_id: 12
+      param_id: 1
+      value: 1
+    - module_id: 12
+      param_id: 2
+      value: 0
+    - module_id: 12
+      param_id: 3
+      value: 0.666667
+    - module_id: 12
+      param_id: 4
+      value: 0
+    - module_id: 13
+      param_id: 0
+      value: 0.304819
+    - module_id: 13
+      param_id: 1
+      value: 1
+    - module_id: 13
+      param_id: 2
+      value: 0
+    - module_id: 13
+      param_id: 3
+      value: 0.666667
+    - module_id: 13
+      param_id: 4
+      value: 0
+    - module_id: 16
+      param_id: 0
+      value: 0.5
+    - module_id: 19
+      param_id: 0
+      value: 0.359036
+    - module_id: 19
+      param_id: 1
+      value: 0
+    - module_id: 19
+      param_id: 2
+      value: 0
+    - module_id: 19
+      param_id: 3
+      value: 0.666667
+    - module_id: 19
+      param_id: 4
+      value: 0
+    - module_id: 17
+      param_id: 0
+      value: 0.641125
+    - module_id: 17
+      param_id: 1
+      value: 1
+    - module_id: 17
+      param_id: 2
+      value: 0
+    - module_id: 17
+      param_id: 3
+      value: 0.666667
+    - module_id: 17
+      param_id: 4
+      value: 0
+    - module_id: 18
+      param_id: 0
+      value: 0.304819
+    - module_id: 18
+      param_id: 1
+      value: 1
+    - module_id: 18
+      param_id: 2
+      value: 0
+    - module_id: 18
+      param_id: 3
+      value: 0.666667
+    - module_id: 18
+      param_id: 4
+      value: 0
+    - module_id: 20
+      param_id: 0
+      value: 0.5
+    - module_id: 1
+      param_id: 0
+      value: 1
+    - module_id: 1
+      param_id: 1
+      value: 0.83494
+    - module_id: 1
+      param_id: 2
+      value: 1
+    - module_id: 1
+      param_id: 3
+      value: 0.83494
+    - module_id: 11
+      param_id: 0
+      value: 1
+    - module_id: 11
+      param_id: 1
+      value: 0.83593
+    - module_id: 11
+      param_id: 2
+      value: 1
+    - module_id: 11
+      param_id: 3
+      value: 0.83527
+    - module_id: 5
+      param_id: 0
+      value: 0.649398
+    - module_id: 5
+      param_id: 1
+      value: 0.498
+    - module_id: 5
+      param_id: 2
+      value: 0.649397
+    - module_id: 5
+      param_id: 3
+      value: 0.503
+    - module_id: 15
+      param_id: 0
+      value: 0.649397
+    - module_id: 15
+      param_id: 1
+      value: 0.506
+    - module_id: 15
+      param_id: 2
+      value: 0.649397
+    - module_id: 15
+      param_id: 3
+      value: 0.501
+    - module_id: 22
+      param_id: 0
+      value: 0.655422
+    - module_id: 22
+      param_id: 1
+      value: 0.5
+    - module_id: 22
+      param_id: 2
+      value: 0.793976
+    - module_id: 22
+      param_id: 3
+      value: 0.201205
+    - module_id: 23
+      param_id: 0
+      value: 0.655422
+    - module_id: 23
+      param_id: 1
+      value: 0.5
+    - module_id: 23
+      param_id: 2
+      value: 0.793976
+    - module_id: 23
+      param_id: 3
+      value: 0.201205
+  mapped_knobs:
+    - name: ''
+      set:
+        - panel_knob_id: 0
+          module_id: 4
+          param_id: 0
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Pitch 1
+        - panel_knob_id: 1
+          module_id: 9
+          param_id: 0
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Pitch 2
+        - panel_knob_id: 2
+          module_id: 14
+          param_id: 0
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Pitch 3
+        - panel_knob_id: 3
+          module_id: 19
+          param_id: 0
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Pitch 4
+        - panel_knob_id: 4
+          module_id: 2
+          param_id: 0
+          curve_type: 0
+          min: 0
+          max: 0.392
+          alias_name: Vol LFO Rate
+        - panel_knob_id: 4
+          module_id: 7
+          param_id: 0
+          curve_type: 0
+          min: 0
+          max: 0.514
+          alias_name: Vol LFO Rate
+        - panel_knob_id: 4
+          module_id: 12
+          param_id: 0
+          curve_type: 0
+          min: 0
+          max: 0.717
+          alias_name: Vol LFO Rate
+        - panel_knob_id: 4
+          module_id: 17
+          param_id: 0
+          curve_type: 0
+          min: 0
+          max: 0.846
+          alias_name: Vol LFO Rate
+        - panel_knob_id: 5
+          module_id: 3
+          param_id: 0
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Pan LFO Rate
+        - panel_knob_id: 5
+          module_id: 8
+          param_id: 0
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Pan LFO Rate
+        - panel_knob_id: 5
+          module_id: 13
+          param_id: 0
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Pan LFO Rate
+        - panel_knob_id: 5
+          module_id: 18
+          param_id: 0
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Pan LFO Rate
+        - panel_knob_id: 6
+          module_id: 1
+          param_id: 1
+          curve_type: 0
+          min: 1
+          max: 0.5
+          alias_name: Amplitude LFO Depth
+        - panel_knob_id: 6
+          module_id: 1
+          param_id: 3
+          curve_type: 0
+          min: 1
+          max: 0.5
+          alias_name: Amplitude LFO Depth
+        - panel_knob_id: 6
+          module_id: 11
+          param_id: 3
+          curve_type: 0
+          min: 1
+          max: 0.501
+          alias_name: Amplitude LFO Depth
+        - panel_knob_id: 6
+          module_id: 11
+          param_id: 1
+          curve_type: 0
+          min: 1
+          max: 0.503
+          alias_name: Amplitude LFO Depth
+        - panel_knob_id: 7
+          module_id: 5
+          param_id: 0
+          curve_type: 0
+          min: 0.5
+          max: 1
+          alias_name: Pan LFO Depth
+        - panel_knob_id: 7
+          module_id: 5
+          param_id: 2
+          curve_type: 0
+          min: 0.5
+          max: 1
+          alias_name: Pan LFO Depth
+        - panel_knob_id: 7
+          module_id: 15
+          param_id: 0
+          curve_type: 0
+          min: 0.5
+          max: 1
+          alias_name: Pan LFO Depth
+        - panel_knob_id: 7
+          module_id: 15
+          param_id: 2
+          curve_type: 0
+          min: 0.5
+          max: 1
+          alias_name: Pan LFO Depth
+        - panel_knob_id: 8
+          module_id: 21
+          param_id: 0
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Mix Level
+        - panel_knob_id: 8
+          module_id: 21
+          param_id: 1
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Mix Level
+        - panel_knob_id: 8
+          module_id: 21
+          param_id: 2
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Mix Level
+        - panel_knob_id: 8
+          module_id: 21
+          param_id: 3
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Mix Level
+        - panel_knob_id: 9
+          module_id: 22
+          param_id: 0
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Reverb Size
+        - panel_knob_id: 9
+          module_id: 23
+          param_id: 0
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Reverb Size
+        - panel_knob_id: 10
+          module_id: 23
+          param_id: 2
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Reverb Damping
+        - panel_knob_id: 10
+          module_id: 22
+          param_id: 2
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Reverb Damping
+        - panel_knob_id: 11
+          module_id: 23
+          param_id: 3
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Reverb Dry/Wet
+        - panel_knob_id: 11
+          module_id: 22
+          param_id: 3
+          curve_type: 0
+          min: 0
+          max: 1
+          alias_name: Reverb Dry/Wet
+    - name: ''
+      set: []
+    - name: ''
+      set: []
+    - name: ''
+      set: []
+    - name: ''
+      set: []
+    - name: ''
+      set: []
+    - name: ''
+      set: []
+    - name: ''
+      set: []
+  midi_maps:
+    name: ''
+    set: []
+  midi_poly_num: 0
+  mapped_lights: []
+  vcvModuleStates:
+    - module_id: 4
+      data: |-
+        {"blockTZFMDC":true,"removePulseDC":true,"limitPW":true,"oversamplingIndex":1}
+    - module_id: 2
+      data: |-
+        {"blockTZFMDC":true,"removePulseDC":true,"limitPW":true,"oversamplingIndex":1}
+    - module_id: 3
+      data: |-
+        {"blockTZFMDC":true,"removePulseDC":true,"limitPW":true,"oversamplingIndex":1}
+    - module_id: 9
+      data: |-
+        {"blockTZFMDC":true,"removePulseDC":true,"limitPW":true,"oversamplingIndex":1}
+    - module_id: 7
+      data: |-
+        {"blockTZFMDC":true,"removePulseDC":true,"limitPW":true,"oversamplingIndex":1}
+    - module_id: 8
+      data: |-
+        {"blockTZFMDC":true,"removePulseDC":true,"limitPW":true,"oversamplingIndex":1}
+    - module_id: 14
+      data: |-
+        {"blockTZFMDC":true,"removePulseDC":true,"limitPW":true,"oversamplingIndex":1}
+    - module_id: 12
+      data: |-
+        {"blockTZFMDC":true,"removePulseDC":true,"limitPW":true,"oversamplingIndex":1}
+    - module_id: 13
+      data: |-
+        {"blockTZFMDC":true,"removePulseDC":true,"limitPW":true,"oversamplingIndex":1}
+    - module_id: 19
+      data: |-
+        {"blockTZFMDC":true,"removePulseDC":true,"limitPW":true,"oversamplingIndex":1}
+    - module_id: 17
+      data: |-
+        {"blockTZFMDC":true,"removePulseDC":true,"limitPW":true,"oversamplingIndex":1}
+    - module_id: 18
+      data: |-
+        {"blockTZFMDC":true,"removePulseDC":true,"limitPW":true,"oversamplingIndex":1}
