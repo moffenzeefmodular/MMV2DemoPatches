@@ -14,26 +14,33 @@ PatchData:
     9: '4msCompany:StMix'
   int_cables:
     - out:
-        module_id: 2
+        module_id: 5
         jack_id: 0
       ins:
-        - module_id: 6
-          jack_id: 2
-      color: 13501
-    - out:
-        module_id: 3
-        jack_id: 0
-      ins:
-        - module_id: 6
-          jack_id: 4
+        - module_id: 8
+          jack_id: 0
       color: 61865
     - out:
-        module_id: 4
+        module_id: 5
+        jack_id: 1
+      ins:
+        - module_id: 8
+          jack_id: 1
+      color: 64934
+    - out:
+        module_id: 8
         jack_id: 0
       ins:
-        - module_id: 6
-          jack_id: 6
-      color: 64934
+        - module_id: 9
+          jack_id: 0
+      color: 13501
+    - out:
+        module_id: 8
+        jack_id: 1
+      ins:
+        - module_id: 9
+          jack_id: 1
+      color: 35419
     - out:
         module_id: 1
         jack_id: 1
@@ -62,6 +69,20 @@ PatchData:
         - module_id: 7
           jack_id: 6
       color: 1453
+    - out:
+        module_id: 6
+        jack_id: 0
+      ins:
+        - module_id: 5
+          jack_id: 0
+      color: 1453
+    - out:
+        module_id: 6
+        jack_id: 1
+      ins:
+        - module_id: 5
+          jack_id: 1
+      color: 13501
     - out:
         module_id: 7
         jack_id: 0
@@ -77,20 +98,6 @@ PatchData:
           jack_id: 3
       color: 35419
     - out:
-        module_id: 6
-        jack_id: 0
-      ins:
-        - module_id: 5
-          jack_id: 0
-      color: 1453
-    - out:
-        module_id: 6
-        jack_id: 1
-      ins:
-        - module_id: 5
-          jack_id: 1
-      color: 13501
-    - out:
         module_id: 1
         jack_id: 0
       ins:
@@ -98,33 +105,26 @@ PatchData:
           jack_id: 0
       color: 1453
     - out:
-        module_id: 5
+        module_id: 2
         jack_id: 0
       ins:
-        - module_id: 8
-          jack_id: 0
-      color: 61865
-    - out:
-        module_id: 5
-        jack_id: 1
-      ins:
-        - module_id: 8
-          jack_id: 1
-      color: 64934
-    - out:
-        module_id: 8
-        jack_id: 0
-      ins:
-        - module_id: 9
-          jack_id: 0
+        - module_id: 6
+          jack_id: 2
       color: 13501
     - out:
-        module_id: 8
-        jack_id: 1
+        module_id: 3
+        jack_id: 0
       ins:
-        - module_id: 9
-          jack_id: 1
-      color: 35419
+        - module_id: 6
+          jack_id: 4
+      color: 61865
+    - out:
+        module_id: 4
+        jack_id: 0
+      ins:
+        - module_id: 6
+          jack_id: 6
+      color: 64934
   mapped_ins: []
   mapped_outs:
     - panel_jack_id: 0
@@ -138,16 +138,16 @@ PatchData:
   static_knobs:
     - module_id: 5
       param_id: 0
-      value: 0.875
+      value: 0.5
     - module_id: 5
       param_id: 1
-      value: 0.875
+      value: 0.5
     - module_id: 5
       param_id: 2
-      value: 0.875
+      value: 0.5
     - module_id: 5
       param_id: 3
-      value: 0.875
+      value: 0.5
     - module_id: 5
       param_id: 4
       value: 0.5
@@ -165,16 +165,16 @@ PatchData:
       value: 0.344578
     - module_id: 1
       param_id: 1
-      value: 0.165822
+      value: 0.181672
     - module_id: 1
       param_id: 2
-      value: 0.120602
+      value: 0.0990964
     - module_id: 1
       param_id: 3
       value: 0.5
     - module_id: 1
       param_id: 4
-      value: 0.625677
+      value: 0.615422
     - module_id: 1
       param_id: 5
       value: 0
@@ -225,16 +225,16 @@ PatchData:
       value: 0.33012
     - module_id: 3
       param_id: 1
-      value: 0.162872
+      value: 0.178441
     - module_id: 3
       param_id: 2
-      value: 0.120602
+      value: 0.0990964
     - module_id: 3
       param_id: 3
       value: 0.5
     - module_id: 3
       param_id: 4
-      value: 0.629899
+      value: 0.619759
     - module_id: 3
       param_id: 5
       value: 0
@@ -285,16 +285,16 @@ PatchData:
       value: 0.328916
     - module_id: 2
       param_id: 1
-      value: 0.168771
+      value: 0.184904
     - module_id: 2
       param_id: 2
-      value: 0.120602
+      value: 0.0990964
     - module_id: 2
       param_id: 3
       value: 0.5
     - module_id: 2
       param_id: 4
-      value: 0.625677
+      value: 0.615422
     - module_id: 2
       param_id: 5
       value: 0
@@ -345,16 +345,16 @@ PatchData:
       value: 0.333735
     - module_id: 4
       param_id: 1
-      value: 0.164511
+      value: 0.180236
     - module_id: 4
       param_id: 2
-      value: 0.120602
+      value: 0.0990963
     - module_id: 4
       param_id: 3
       value: 0.5
     - module_id: 4
       param_id: 4
-      value: 0.63201
+      value: 0.621928
     - module_id: 4
       param_id: 5
       value: 0
@@ -402,52 +402,52 @@ PatchData:
       value: 0.5
     - module_id: 6
       param_id: 0
-      value: 0.875
+      value: 0.5
     - module_id: 6
       param_id: 1
-      value: 0.875
+      value: 0.5
     - module_id: 6
       param_id: 2
-      value: 0.875
+      value: 0.5
     - module_id: 6
       param_id: 3
-      value: 0.875
+      value: 0.5
     - module_id: 6
       param_id: 4
-      value: 0.153624
+      value: 0.278822
     - module_id: 6
       param_id: 5
-      value: 0.15546
+      value: 0.282154
     - module_id: 6
       param_id: 6
-      value: 0.152706
+      value: 0.277155
     - module_id: 6
       param_id: 7
-      value: 0.850048
+      value: 0.283265
     - module_id: 7
       param_id: 0
-      value: 0.875
+      value: 0.5
     - module_id: 7
       param_id: 1
-      value: 0.875
+      value: 0.5
     - module_id: 7
       param_id: 2
-      value: 0.875
+      value: 0.5
     - module_id: 7
       param_id: 3
-      value: 0.875
+      value: 0.5
     - module_id: 7
       param_id: 4
-      value: 0.8476
+      value: 0.7234
     - module_id: 7
       param_id: 5
-      value: 0.847906
+      value: 0.723955
     - module_id: 7
       param_id: 6
-      value: 0.848518
+      value: 0.725066
     - module_id: 7
       param_id: 7
-      value: 0.848824
+      value: 0.725622
     - module_id: 8
       param_id: 0
       value: 0.283168
@@ -566,7 +566,7 @@ PatchData:
       param_id: 7
       value: 0.5
   mapped_knobs:
-    - name: ''
+    - name: Main
       set:
         - panel_knob_id: 0
           module_id: 1
@@ -678,7 +678,7 @@ PatchData:
           param_id: 7
           curve_type: 0
           min: 0.51
-          max: 1
+          max: 0
           alias_name: Stereo Spread
         - panel_knob_id: 3
           module_id: 7
