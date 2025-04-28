@@ -18,7 +18,7 @@ PatchData:
     13: '4msCompany:StMix'
     14: '4msCompany:Source'
     15: '4msCompany:CLKD'
-    16: 'Fundamental:Noise'
+    16: '4msCompany:Noise'
     17: '4msCompany:SH'
     18: '4msCompany:Atvert2'
     19: '4msCompany:SHEV'
@@ -159,15 +159,6 @@ PatchData:
           jack_id: 1
       color: 35419
     - out:
-        module_id: 16
-        jack_id: 0
-      ins:
-        - module_id: 17
-          jack_id: 1
-        - module_id: 17
-          jack_id: 3
-      color: 1453
-    - out:
         module_id: 15
         jack_id: 0
       ins:
@@ -219,6 +210,15 @@ PatchData:
         - module_id: 11
           jack_id: 0
       color: 64934
+    - out:
+        module_id: 16
+        jack_id: 0
+      ins:
+        - module_id: 17
+          jack_id: 3
+        - module_id: 17
+          jack_id: 1
+      color: 13501
   mapped_ins: []
   mapped_outs:
     - panel_jack_id: 0
